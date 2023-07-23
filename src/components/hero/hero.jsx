@@ -1,55 +1,53 @@
-import imghero from "../../assets/undraw_design_components_9vy6.svg";
-
 import Typewriter from "typewriter-effect";
-import Cards from "../cards/cards";
-
+import imghero from "../../assets/undraw_design_components_9vy6.svg";
 function Hero() {
   return (
-    <div className="flex flex-wrap h-[700px] items-center bg-[#0b0d4d] text-white">
-      <div className="w-[50%] justify-center items-center flex flex-wrap">
-        <h2 className="font-extrabold text-4xl flex flex-wrap w-full justify-center">
-          <Typewriter
-            options={{
-              strings: [
-                "HACEMOS TUS IDEAS REALIDAD",
-                "TE ASESORAMOS COMPLETAMENTE",
-                "TU NEGOCIO SIN LIMITES",
-              ],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </h2>
-        <h2 className="text-2xl font-bold">
-          Encuntra asesoria en uno de nuestros experto
-        </h2>
-        <div className="flex flex-col w-4/5 gap-y-5 ">
-          <input
-            className="p-2"
-            placeholder="Nombre"
-            type="text"
-            name=""
-            id=""
-          />
-          <input
-            className="p-2"
-            placeholder="Telefono"
-            type="number"
-            name=""
-            id=""
-          />
-          <button className="bg-[#f26419] rounded-sm p-2">Enviar</button>
-          <span>* Nunca reveles informaciones de tarjetas de creditos</span>
+    <>
+      <div className="hidden md:flex  items-center bg-[#0b0d4d] h-[700px] text-white">
+        <div className="h-[500px] gap-2 justify-start flex-col  flex w-[50%]">
+          <h2 className="font-extrabold text-3xl w-full flex justify-center">
+            <Typewriter
+              options={{
+                strings: [
+                  "HACEMOS TUS IDEAS REALIDAD",
+                  "TE ASESORAMOS COMPLETAMENTE",
+                  "TU NEGOCIO SIN LIMITES",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </h2>
+          <h3 className="flex  justify-center font-semibold text-[15px] py-2">
+            Encuentra asesoramiento de nuestros expertos
+          </h3>
+          <div className="flex flex-col items-center gap-5">
+            <input
+              className="w-[400px] p-3"
+              placeholder="Nombre"
+              type="text"
+              name="name"
+              id=""
+            />
+            <input
+              className="w-[400px] p-3"
+              placeholder="telefono"
+              type="number"
+              name=""
+              id=""
+            />
+            <h4>*No reveles informacion de tarjetas de creditos</h4>
+
+            <button className="bg-second-color p-3 rounded-sm w-3/5">
+              Registrarse
+            </button>
+          </div>
+        </div>
+        <div className="h-[350px] justify-start flex-col  flex w-[50%]">
+          <img className="w-3/4" src={imghero} alt="" />
         </div>
       </div>
-      <div className="w-[50%] flex justify-center items-center">
-        <img
-          className="w-3/4 flex items-center justify-center"
-          src={imghero}
-          alt=""
-        />
-      </div>
-    </div>
+    </>
   );
 }
 

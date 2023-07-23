@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar/navbar";
 
 function Home() {
   return (
-    <div className="bg-[#0b0d4d]">
+    <div className="">
       <Navbar />
       <Hero />
       <Cards />
