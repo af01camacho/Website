@@ -7,6 +7,9 @@ export default {
         "primary-color": "var(--primary-color)",
         "second-color": "var(--second-color)",
       },
+      fontFamily: {
+        "primary-font": "var(--primary-font)",
+      },
     },
   },
   plugins: [],

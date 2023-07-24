@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Navbar() {
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+export function Navbar() {
   return (
     <>
       {/* Menu Desktop */}
-      <nav className="md:flex hidden bg-primary-color  py-5 justify-around text-white items-center">
+      <nav className="uppercase font-primary-font md:flex hidden bg-primary-color  py-5 justify-around text-white items-center">
         <h2 className="text-second-color flex font-bold text-2xl">
           Web <h2 className="text-white">Master</h2>
         </h2>
         <ul className="flex gap-5 font-bold text-xm">
-          <Link>Aplicaciones</Link>
-          <Link>Servicios</Link>
+          <Link to="/">Aplicaciones</Link>
+          <Link to="/services">Servicios</Link>
           <Link>Precios</Link>
           <Link>Soporte</Link>
         </ul>
@@ -23,4 +25,18 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export function NavbarMobile() {
+  return (
+    <>
+      <nav className="p-2 justify-around items-center md:hidden flex bg-primary-color  uppercase font-primary-font">
+        <FontAwesomeIcon icon={faBars} style={{ color: "#f0f0f0" }} />
+        <h2 className="flex text-second-color font-extrabold text-2xl">
+          Master <h2 className="text-white">Web</h2>
+        </h2>
+        <button className="text-white bg-second-color rounded-sm p-1 w-1/4">
+          Contactanos
+        </button>
+      </nav>
+    </>
+  );
+}

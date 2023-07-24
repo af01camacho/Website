@@ -1,16 +1,16 @@
-import Cards from "../../components/cards/cards";
+import { CardsDesktop, CardsMobile } from "../../components/cards/cards";
 import Hero from "../../components/hero/hero";
-import Navbar from "../../components/navbar/navbar";
+import { Navbar, NavbarMobile } from "../../components/navbar/navbar";
 import SeccionBuscar from "../../secciones/seccionBuscar/seccionBuscar";
-
 
 function Home() {
   return (
     <div className="">
       <Navbar />
+      <NavbarMobile />
       <Hero />
-      <SeccionBuscar />
-      <Cards />
+      <CardsDesktop />
+      <CardsMobile />
     </div>
   );
 }

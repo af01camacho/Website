@@ -1,9 +1,9 @@
-import TypeWriter from '../typewriter/typewriter'
+import TypeWriter from "../typewriter/typewriter";
 import imghero from "../../assets/undraw_design_components_9vy6.svg";
 function Hero() {
   return (
     <>
-      <div className="hidden md:flex  items-center bg-[#0b0d4d] h-[700px] text-white">
+      <div className="font-primary-font hidden md:flex  items-center bg-[#0b0d4d] h-[700px] text-white">
         <div className="h-[500px] gap-2 justify-start flex-col  flex w-[50%]">
           <TypeWriter />
           <h3 className="flex  justify-center font-semibold text-[15px] py-2">
