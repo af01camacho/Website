@@ -11,9 +11,9 @@ export function CardsDesktop() {
   return (
     <>
       <div className="hidden md:flex justify-center">
-        <div className="flex flex-wrap absolute top-[700px]  py-10 gap-3 uppercase tracking-widest	 ">
+        <div className="flex flex-wrap absolute top-[700px]  justify-center  py-10 gap-3 uppercase 	 ">
           {/* Card #1 */}
-          <div className=" bg-white rounded-sm w-[250px] h-[250px] shadow-2xl justify-center items-center flex py-12">
+          <div className=" bg-white rounded-sm w-[192px] lg:w-[250px]  h-[250px] shadow-2xl justify-center items-center flex py-12">
             <div className="flex flex-col align-baseline gap-4">
               <FontAwesomeIcon
                 icon={faPenNib}
@@ -26,7 +26,7 @@ export function CardsDesktop() {
             </div>
           </div>
           {/* Card #2 */}
-          <div className="bg-white rounded-sm w-[280px] h-[270px] shadow-2xl justify-center items-center flex py-12">
+          <div className="bg-white rounded-sm lg:w-[250px] w-[192px] h-[270px] shadow-2xl justify-center items-center flex py-12">
             <div className="flex flex-col align-baseline gap-4">
               <FontAwesomeIcon
                 icon={faHeadset}
@@ -39,7 +39,7 @@ export function CardsDesktop() {
             </div>
           </div>
           {/* Card #3 */}
-          <div className=" bg-white rounded-sm w-[250px] h-[250px] shadow-2xl justify-center items-center flex py-12">
+          <div className=" bg-white rounded-sm w-[192px] lg:w-[250px] h-[250px] shadow-2xl justify-center items-center flex py-12">
             <div className="flex flex-col align-baseline gap-4 items-center">
               <FontAwesomeIcon
                 icon={faMoneyCheckDollar}
@@ -52,7 +52,7 @@ export function CardsDesktop() {
             </div>
           </div>
           {/* Card #4 */}
-          <div className=" bg-white rounded-sm w-[280px] h-[280px] shadow-2xl justify-center items-center flex py-12">
+          <div className=" bg-white rounded-sm  w-[192px] lg:w-[250px] h-[280px] shadow-2xl justify-center items-center flex py-12">
             <div className="flex flex-col align-baseline gap-4">
               <FontAwesomeIcon
                 icon={faFileShield}
