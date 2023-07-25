@@ -11,6 +11,7 @@ function Home() {
       <Hero />
       <CardsDesktop />
       <CardsMobile />
+      <SeccionBuscar />
     </div>
   );
 }
