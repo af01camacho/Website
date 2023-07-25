@@ -1,5 +1,5 @@
 import { CardsDesktop, CardsMobile } from "../../components/cards/cards";
-import Hero from "../../components/hero/hero";
+import { HeroDesktop, HeroMobile } from "../../components/hero/hero";
 import { Navbar, NavbarMobile } from "../../components/navbar/navbar";
 import SeccionBuscar from "../../secciones/seccionBuscar/seccionBuscar";
 
@@ -8,7 +8,8 @@ function Home() {
     <div className="">
       <Navbar />
       <NavbarMobile />
-      <Hero />
+      <HeroDesktop />
+      <HeroMobile />
       <CardsDesktop />
       <CardsMobile />
     </div>

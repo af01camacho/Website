@@ -1,10 +1,10 @@
 import TypeWriter from "../typewriter/typewriter";
 import imghero from "../../assets/undraw_design_components_9vy6.svg";
-function Hero() {
+export function HeroDesktop() {
   return (
     <>
-      <div className="font-primary-font hidden md:flex  items-center bg-[#0b0d4d] h-[700px] text-white">
-        <div className="h-[500px] gap-2 justify-start flex-col  flex w-[50%]">
+      <div className="font-primary-font hidden md:flex lg:flex-row md:flex-col-reverse  items-center justify-center px-10  bg-[#0b0d4d] h-[700px] text-white">
+        <div className="h-[500px] gap-2 justify-start flex-col  flex w-fit">
           <TypeWriter />
           <h3 className="flex  justify-center font-semibold text-[15px] py-2">
             Encuentra asesoramiento de nuestros expertos
@@ -31,12 +31,19 @@ function Hero() {
             </button>
           </div>
         </div>
-        <div className="h-[350px] justify-start flex-col  flex w-[50%]">
-          <img className="w-3/4" src={imghero} alt="" />
+        <div className="h-[350px] justify-center items-center flex-col  flex w-fit">
+          <img className="w-3/4 md:w-2/4 lg:w-3/4" src={imghero} alt="" />
         </div>
       </div>
     </>
   );
 }
-
-export default Hero;
+export function HeroMobile() {
+  return (
+    <>
+      <div className="md:hidden  flex bg-[#0b0d4d] text-white p-2 text-center">
+        <TypeWriter />
+      </div>
+    </>
+  );
+}
