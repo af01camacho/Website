@@ -12,7 +12,6 @@ function Home() {
       <HeroMobile />
       <CardsDesktop />
       <CardsMobile />
-      <SeccionBuscar />
     </div>
   );
 }

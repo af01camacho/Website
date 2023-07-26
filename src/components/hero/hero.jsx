@@ -48,14 +48,14 @@ export function HeroMobile() {
 
         <div className="flex flex-col items-center gap-5">
           <input
-            className="w-[400px] p-3 outline-0 text-black"
+            className="w-[300px] p-3 outline-0 text-black"
             placeholder="Nombre"
             type="text"
             name="name"
             id=""
           />
           <input
-            className="w-[400px] p-3 outline-0 text-black"
+            className="w-[300px] p-3 outline-0 text-black"
             placeholder="telefono"
             type="number"
             name=""
