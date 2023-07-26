@@ -15,7 +15,6 @@ const Search = ({ onSearch }) => {
     if (searchQuery !== "") {
       QueryDomains.searchDomains(searchQuery)
         .then((data) => {
-          console.log("API Response:", data);
           const results = data.map((domain) => ({
             domain: domain.domainName,
             available: domain.domainAvailability === "AVAILABLE",
@@ -30,8 +29,8 @@ const Search = ({ onSearch }) => {
   };
 
   return (
-    <div className="relative m-2 font-primary-font">
-      <div className="flex items-center  w-[500px] outline-none border-none bg-white p-2 justify-araound border-4 rounded-lg overflow-hidden">
+    <div className="relative m-2 font-primary-font ">
+      <div className="flex items-center w-[500px] outline-none border-none bg-white p-2 justify-araound border-4 rounded-lg overflow-hidden">
         <input
           type="text"
           onChange={handleSearchInput}
