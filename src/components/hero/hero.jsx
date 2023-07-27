@@ -3,7 +3,7 @@ import imghero from "../../assets/Innovation-amico (2).svg";
 export function Hero() {
   return (
     <>
-      <div className=" grid-cols-2 bg-[#263238] h-[500px] md:hidden sm:hidden hidden lg:grid">
+      <div className=" grid-cols-2 bg-[#27374D] h-[500px] md:hidden sm:hidden hidden lg:grid">
         {/* Card 1  */}
         <div className="text-white flex items-center justify-center flex-col">
           <TypeWriter />

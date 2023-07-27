@@ -1,61 +1,48 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGlobe,
-  faGears,
-  faPalette,
-  faHandHoldingDollar,
-  faLock,
-  faSyncAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from "react";
 
-function CardInfoSection() {
-  const servicios = [
+function CardsPrice() {
+  const cardsprice = [
     {
-      icon: faGears,
-      title: "Hosting Start",
-      info: "Ideal para pequeños negocios",
-    },
-    {
-      icon: faPalette,
-      title: "Hosting Premium",
-      info: "Ideal para Grandes empresas",
-    },
-    {
-      icon: faGlobe,
-      title: "Hosting Deluxe",
-      info: "Ideal para tiendas virtuales",
+      name: "Hosting Starter",
+      desc: "Hosting ideal para pequeñas empresas",
+      price_col: "15.000",
+      price_usd: "3,75",
+      url: "",
     },
   ];
-  return (
-    <section className="py-4 px-4">
-      <div className="flex items-center justify-center gap-2 mb-6 mt-4">
-        <h1 className="font-bold text-center text-4xl">Hosting Web basico</h1>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
-        {servicios.map((servicio, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center border h-[700px] justify-around bg-white border-gray-300 rounded p-4"
-          >
-            <div className="flex flex-col items-center">
-              <span className="text-4xl text-primary-color mb-4">
-                <FontAwesomeIcon icon={servicio.icon} />
-              </span>
-              <h2 className="text-xl font-semibold mb-2">{servicio.title}</h2>
-              <p className="text-gray-600 text-sm text-center">
-                {servicio.info}
-              </p>
-            </div>
 
-            {/* Comprar */}
-            <button className="text-black bg-primary-color p-2 w-3/4 text-white">
-              Adquirir
-            </button>
+  const [showPriceInUSD, setShowPriceInUSD] = useState(false);
+
+  return (
+    <>
+      <h2 className="text-4xl font-extrabold font-primary-font text-center py-5">
+        Planes de hosting web
+      </h2>
+      <div className="grid grid-cols-3 place-content-center place-items-center">
+        <div className="relative h-80 w-[300px] rounded-md bg-white shadow-2xl">
+          <div className="ribbon absolute h-40 w-40 -top-2 -left-2  overflow-hidden before:absolute before:top-0 before:right-0 before:border-4 before:border-blue-500  after:absolute after:bottom-0 after:left-0 after:border-4 after:border-blue-500">
+            <div className="absolute -left-14 top-10 w-60 bg-gradient-to-br from-blue-600 via-blue-400 to-blue-500 py-2.5 text-center text-white shadow-md -rotate-45">
+              40% descuento
+            </div>
           </div>
-        ))}
+        </div>
+        <div className="relative h-80 w-[300px] rounded-md bg-white shadow-2xl">
+          <div className="ribbon absolute h-40 w-40 -top-2 -left-2  overflow-hidden before:absolute before:top-0 before:right-0 before:border-4 before:border-red-500  after:absolute after:bottom-0 after:left-0 after:border-4 after:border-red-500">
+            <div className="absolute -left-14 top-10 w-60 bg-gradient-to-br from-red-600 via-red-400 to-red-500 py-2.5 text-center text-white shadow-md -rotate-45">
+              40% descuento
+            </div>
+          </div>
+        </div>
+        <div className="relative h-80 w-[300px] rounded-md bg-white shadow-2xl">
+          <div className="ribbon absolute h-40 w-40 -top-2 -left-2  overflow-hidden before:absolute before:top-0 before:right-0 before:border-4 before:border-blue-500  after:absolute after:bottom-0 after:left-0 after:border-4 after:border-blue-500">
+            <div className="absolute -left-14 top-10 w-60 bg-gradient-to-br from-blue-600 via-blue-400 to-blue-500 py-2.5 text-center text-white shadow-md -rotate-45">
+              40% descuento
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </>
   );
 }
 
-export default CardInfoSection;
+export default CardsPrice;
