@@ -9,7 +9,7 @@ const SeccionBuscar = () => {
   };
 
   return (
-    <div className="  py-5 w-full bg-second-color ">
+    <div className="  py-5 w-full bg-primary-color ">
       <div className="flex lg:flex-col flex-col md:flex-col items-center w-full  ">
         <div className=" break-words text-center md:w-fit flex items-center flex-col justify-center">
           <h2 className="text-3xl font-extrabold uppercase text-white mb-2 font-primary-font">

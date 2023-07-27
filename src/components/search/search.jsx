@@ -41,7 +41,7 @@ const Search = ({ onSearch }) => {
         />
         <button
           onClick={handleSearchButtonClick}
-          className="bg-primary-color text-white px-9 py-3 rounded-lg lg:w-1/4 w-[100px] md:w-1/4 "
+          className="bg-second-color text-white px-9 py-3 rounded-lg lg:w-1/4 w-[100px] md:w-1/4 "
         >
           <FontAwesomeIcon icon={faSearch} />
         </button>

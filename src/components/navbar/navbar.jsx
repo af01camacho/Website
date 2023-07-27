@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faUser } from "@fortawesome/free-solid-svg-icons";
 
 import { Link } from "react-router-dom";
 
@@ -20,8 +20,8 @@ export function NavbarDesktop() {
           <Link>Portafolio</Link>
         </ul>
         <div>
-          <button className="bg-primary-color px-4 py-2 rounded-sm text-white text-m">
-            Iniciar Sesion
+          <button className="bg-second-color px-4 py-2 rounded-full text-white text-m">
+            <FontAwesomeIcon icon={faUser} style={{ color: "white" }} /> Login
           </button>
         </div>
       </nav>
