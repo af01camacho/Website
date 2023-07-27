@@ -9,7 +9,6 @@ import SeccionBuscar from "../../secciones/seccionBuscar/seccionBuscar";
 function Home() {
   return (
     <div>
-      <TopBar />
       <NavbarDesktop />
       <NavbarMobile />
       <Hero />
