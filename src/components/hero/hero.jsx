@@ -10,12 +10,12 @@ export function Hero() {
           <h2>Quedate seguro en manos de nuestros expertos.!</h2>
           <div className="flex flex-col gap-2 p-2 items-center">
             <input
-              className=" w-[400px]  p-2 text-black"
+              className=" w-[400px]  p-2 text-black outline-none"
               type="text"
               placeholder="Nombre"
             />
             <input
-              className="  w-[400px] text-black p-2"
+              className="  w-[400px] text-black p-2 outline-none"
               placeholder="Telefono"
               type="tel"
               name=""
