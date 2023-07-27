@@ -3,7 +3,7 @@ function CardPrice() {
     <>
       <div className="bg-[#f4f7fa] font-primary-font p-2 text-center">
         <h2 className="text-4xl">Hosting web basico</h2>
-        <div className="grid grid-cols-3 p-6 place-items-center">
+        <div className="grid grid-cols-1 p-6 place-items-center md:grid md:grid-cols-1 md:place-items-center lg:grid lg:grid-cols-3 lg:p-6 lg:place-items-center gap-5">
           <div className="h-[450px] p-5 bg-white shadow-xl rounded-m w-3/4">
             <h2 className="text-2xl font-primar-color font-bold">
               Hosting Start
