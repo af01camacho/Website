@@ -4,6 +4,7 @@ import { Hero } from "../../components/hero/hero";
 import { NavbarMobile, NavbarDesktop } from "../../components/navbar/navbar";
 import { TopBar } from "../../components/topbar/topbar";
 import CardInfoSection from "../../secciones/cards-info/card-info";
+import CardPrice from "../../secciones/cards-price/cards-price";
 import SeccionBuscar from "../../secciones/seccionBuscar/seccionBuscar";
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
       <CardsInfo />
       <SeccionBuscar />
       <CardInfoSection />
+      <CardPrice />
     </div>
   );
 }
