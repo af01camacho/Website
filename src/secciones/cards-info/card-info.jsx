@@ -1,7 +1,7 @@
 function CardInfoSection() {
   return (
     <>
-      <div className="grid grid-cols-3 grid-rows-3">
+      <div className="grid grid-cols-3 grid-rows-3 place-items-center">
         <div>card</div>
         <div>card</div>
         <div>card</div>
