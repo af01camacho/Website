@@ -1,28 +1,29 @@
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-export function Navbar() {
+
+import { Link } from "react-router-dom";
+
+export function NavbarDesktop() {
   return (
     <>
-      {/* Menu Desktop */}
-      <nav className="uppercase font-primary-font md:flex hidden bg-primary-color  py-5 justify-around text-white items-center">
-        <h2 className="text-second-color flex font-bold text-2xl">
-          Web{" "}
-          <h2 className="text-second-color text-white flex font-bold text-2xl">
-            Master
-          </h2>
-        </h2>
-        <ul className="flex gap-5 font-bold text-xm">
-          <Link to="/">Aplicaciones</Link>
-          <Link to="/services">Servicios</Link>
-          <Link>Precios</Link>
-          <Link>Soporte</Link>
+      <nav className="md:hidden sm:hidden lg:flex hidden  items-center justify-around bg-primary-color h-16">
+        {/* Logo */}
+        <div className="flex text-xl uppercase font-extrabold font-primary-font">
+          <h2 className="text-second-color">Masters</h2>
+          <h2 className="text-white">Web</h2>
+        </div>
+        {/* Menu */}
+        <ul className="text-white font-primary-font uppercase font-bold  gap-5 flex">
+          <Link>Aplicaciones</Link>
+          <Link>Servicios</Link>
+          <Link>Contactanos</Link>
+          <Link>Portafolio</Link>
         </ul>
-
-        <button className="font-semibold rounded-sm p-2 w-1/6 bg-second-color text-white">
-          Contactanos
-        </button>
+        <div>
+          <button className="bg-second-color p-2 rounded-sm text-white text-m">
+            Iniciar Sesion
+          </button>
+        </div>
       </nav>
     </>
   );
@@ -31,16 +32,27 @@ export function Navbar() {
 export function NavbarMobile() {
   return (
     <>
-      <nav className="p-2 justify-around items-center md:hidden flex bg-primary-color  uppercase font-primary-font">
-        <FontAwesomeIcon icon={faBars} style={{ color: "#f0f0f0" }} />
-        <div className="w-[10px]"></div>
-        <h2 className="flex text-second-color font-extrabold text-2xl">
-          Master <h2 className="text-white">Web</h2>
-        </h2>
-        <button className="text-white bg-second-color rounded-sm text-xs uppercase   p-2 justify-center flex w-[120px]">
-          Contactanos
-        </button>
-      </nav>
+      <div className="bg-primary-color lg:hidden flex justify-evenly h-14  items-center">
+        {/* Menu */}
+        <div className="bg-[#ffffff5e] p-1 rounded-s">
+          <FontAwesomeIcon
+            icon={faBars}
+            size="xl"
+            style={{ color: "#f2f2f2" }}
+          />
+        </div>
+
+        {/* Logo */}
+        <div className="flex uppercase text-white font-primary-font font-extrabold text-2xl justify-center">
+          <h2>Master</h2>
+          <h2 className="text-second-color">Web</h2>
+        </div>
+        <div>
+          <button className="bg-second-color p-1 rounded-sm text-white font-primary-font ">
+            Contactarnos
+          </button>
+        </div>
+      </div>
     </>
   );
 }

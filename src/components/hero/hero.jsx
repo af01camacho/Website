@@ -1,77 +1,42 @@
 import TypeWriter from "../typewriter/typewriter";
 import imghero from "../../assets/undraw_design_components_9vy6.svg";
-export function HeroDesktop() {
+export function Hero() {
   return (
     <>
-      <div className="font-primary-font hidden md:flex lg:flex-row md:flex-col-reverse items-center bg-[#0b0d4d] h-[650px] text-white">
-        <div className="w-full">
+      <div className=" grid-cols-2 bg-primary-color h-[400px] md:hidden sm:hidden hidden lg:grid">
+        {/* Card 1  */}
+        <div className="text-white flex items-center justify-center flex-col">
           <TypeWriter />
-          <h3 className="flex  justify-center font-semibold text-[15px]">
-            Encuentra asesoramiento de nuestros expertos
-          </h3>
-          <div className="flex flex-col items-center gap-5">
+          <h2>Quedate seguro en manos de nuestros expertos.!</h2>
+          <div className="flex flex-col gap-2 p-2 items-center">
             <input
-              className="w-[400px] p-3 outline-0 text-black"
-              placeholder="Nombre"
+              className=" w-[400px]  p-2 text-black"
               type="text"
-              name="name"
-              id=""
+              placeholder="Nombre"
             />
             <input
-              className="w-[400px] p-3 outline-0 text-black"
-              placeholder="telefono"
-              type="number"
+              className="  w-[400px] text-black p-2"
+              placeholder="Telefono"
+              type="tel"
               name=""
               id=""
             />
-            <h4>*No reveles informacion de tarjetas de creditos</h4>
-
-            <button className="bg-second-color p-3 rounded-sm w-3/5">
-              Registrarse
-            </button>
+            <span>
+              * No reveles informacion extra como tarjetas de credito *
+            </span>
+            <input
+              className=" w-[400px] bg-second-color p-2"
+              type="submit"
+              value="Enviar"
+            />
           </div>
         </div>
-        <div className="flex items-center justify-center ">
-          <img
-            className="w-3/4 md:w-[600px] lg:w-[700px] pr-7 "
-            src={imghero}
-            alt=""
-          />
+
+        {/* Card 2 */}
+        <div className="w-[450px] flex items-center">
+          <img src={imghero} alt="" />
         </div>
       </div>
     </>
-  );
-}
-export function HeroMobile() {
-  return (
-    <div className="">
-      <div className="flex-col flex-wrap items-center gap-5 md:hidden py-4 flex bg-[#0b0d4d] text-white p-2 text-center">
-        <TypeWriter />
-
-        <img className="w-3/4 " src={imghero} alt="" />
-
-        <div className="flex flex-col items-center gap-5">
-          <input
-            className="w-[300px] p-3 outline-0 text-black"
-            placeholder="Nombre"
-            type="text"
-            name="name"
-            id=""
-          />
-          <input
-            className="w-[300px] p-3 outline-0 text-black"
-            placeholder="telefono"
-            type="number"
-            name=""
-            id=""
-          />
-          <h4>*No reveles informacion de tarjetas de creditos</h4>
-
-          <button className="bg-second-color p-3 rounded-sm w-3/5">
-            Registrarse
-          </button>
-        </div>
-      </div>
-    </div>
   );
 }

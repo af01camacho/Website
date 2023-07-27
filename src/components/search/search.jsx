@@ -31,7 +31,7 @@ const Search = ({ onSearch }) => {
 
   return (
     <div className="relative m-2 font-primary-font">
-      <div className="flex items-center  w-[500px] outline-none border-none bg-white p-2 justify-araound border-4 rounded-lg overflow-hidden">
+      <div className="flex items-center  w-fit lg:w-[800px] md:w-[700px] outline-none border-none bg-white p-2 justify-araound border-4 rounded-lg overflow-hidden">
         <input
           type="text"
           onChange={handleSearchInput}

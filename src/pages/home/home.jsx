@@ -1,17 +1,22 @@
-import { CardsDesktop, CardsMobile } from "../../components/cards/cards";
-import { HeroDesktop, HeroMobile } from "../../components/hero/hero";
-import { Navbar, NavbarMobile } from "../../components/navbar/navbar";
+import BtnWsp from "../../components/botonWsp/botonwsp";
+import CardsInfo from "../../components/cards/cards-info";
+import { Hero } from "../../components/hero/hero";
+import { NavbarMobile, NavbarDesktop } from "../../components/navbar/navbar";
+import { TopBar } from "../../components/topbar/topbar";
+import CardInfoSection from "../../secciones/cards-info/card-info";
 import SeccionBuscar from "../../secciones/seccionBuscar/seccionBuscar";
 
 function Home() {
   return (
-    <div className="">
-      <Navbar />
+    <div>
+      <BtnWsp />
+      <TopBar />
+      <NavbarDesktop />
       <NavbarMobile />
-      <HeroDesktop />
-      <HeroMobile />
-      <CardsDesktop />
-      <CardsMobile />
+      <Hero />
+      <CardsInfo />
+      <SeccionBuscar />
+      <CardInfoSection />
     </div>
   );
 }

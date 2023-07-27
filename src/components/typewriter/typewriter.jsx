@@ -7,7 +7,7 @@ const TypeWriter = () => {
         options={{
           strings: [
             "HACEMOS REALIDAD TU IDEA...",
-            "TE ASESORAMOS COMPLETAMENTE",
+            "TE ASESORAMOS EN COMPRAS",
             "TU NEGOCIO SIN LIMITES...",
           ],
           autoStart: true,

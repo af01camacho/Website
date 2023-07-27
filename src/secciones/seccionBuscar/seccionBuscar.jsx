@@ -9,9 +9,9 @@ const SeccionBuscar = () => {
   };
 
   return (
-    <div className="py-10  px-4 md:px-8 flex items-center  absolute bottom-0 left-0 right-0 md:top-[1100px] bg-primary-color h-fit  lg:top-[1070px]">
-      <div className="flex lg:flex-row md:flex-col items-center justify-between mb-4 pl-10 pr-10">
-        <div className=" break-words text-center md:w-fit">
+    <div className=" bg-primary-color py-5 w-full ">
+      <div className="flex lg:flex-col flex-col md:flex-col items-center w-full  ">
+        <div className=" break-words text-center md:w-fit flex items-center flex-col justify-center">
           <h2 className="text-3xl font-extrabold uppercase text-white mb-2 font-primary-font">
             Registra tu dominio Aquí hoy
           </h2>
@@ -20,7 +20,7 @@ const SeccionBuscar = () => {
             cualquiera de nuestros planes
           </p>
         </div>
-        <div className="md:w-1/2 flex justify-center md:justify-end items-center">
+        <div className="md:w-fit w-fit flex justify-center md:justify-end items-center">
           <Search onSearch={handleSearch} />
         </div>
       </div>
