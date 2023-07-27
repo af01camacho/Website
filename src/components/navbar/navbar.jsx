@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 export function NavbarDesktop() {
   return (
     <>
-      <nav className="md:hidden sm:hidden lg:flex hidden  items-center justify-around h-16">
+      <nav className="md:hidden sm:hidden bg-[#000248f2] lg:flex hidden  items-center justify-around h-16">
         {/* Logo */}
         <div className="flex text-xl uppercase font-extrabold font-primary-font">
           <h2 className="text-second-color">Masters</h2>
-          <h2 className="text-primary-color">Web</h2>
+          <h2 className="text-white">Web</h2>
         </div>
         {/* Menu */}
-        <ul className="text-primary-color font-primary-font uppercase font-bold  gap-5 flex">
+        <ul className="text-white font-primary-font uppercase font-bold  gap-5 flex">
           <Link>Aplicaciones</Link>
           <Link>Servicios</Link>
           <Link>Contactanos</Link>
