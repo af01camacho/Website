@@ -6,21 +6,21 @@ import { Link } from "react-router-dom";
 export function NavbarDesktop() {
   return (
     <>
-      <nav className="md:hidden sm:hidden lg:flex hidden  items-center justify-around bg-primary-color h-16">
+      <nav className="md:hidden sm:hidden lg:flex hidden  items-center justify-around h-16">
         {/* Logo */}
         <div className="flex text-xl uppercase font-extrabold font-primary-font">
           <h2 className="text-second-color">Masters</h2>
-          <h2 className="text-white">Web</h2>
+          <h2 className="text-primary-color">Web</h2>
         </div>
         {/* Menu */}
-        <ul className="text-white font-primary-font uppercase font-bold  gap-5 flex">
+        <ul className="text-primary-color font-primary-font uppercase font-bold  gap-5 flex">
           <Link>Aplicaciones</Link>
           <Link>Servicios</Link>
           <Link>Contactanos</Link>
           <Link>Portafolio</Link>
         </ul>
         <div>
-          <button className="bg-second-color p-2 rounded-sm text-white text-m">
+          <button className="bg-primary-color px-4 py-2 rounded-sm text-white text-m">
             Iniciar Sesion
           </button>
         </div>
@@ -32,7 +32,7 @@ export function NavbarDesktop() {
 export function NavbarMobile() {
   return (
     <>
-      <div className="bg-primary-color lg:hidden flex justify-evenly h-14  items-center">
+      <div className="bg-white lg:hidden flex justify-evenly h-14  items-center">
         {/* Menu */}
         <div className="bg-[#ffffff5e] p-1 rounded-s">
           <FontAwesomeIcon
@@ -43,12 +43,12 @@ export function NavbarMobile() {
         </div>
 
         {/* Logo */}
-        <div className="flex uppercase text-white font-primary-font font-extrabold text-2xl justify-center">
+        <div className="flex uppercase text-primary-color font-primary-font font-extrabold text-2xl justify-center">
           <h2>Master</h2>
           <h2 className="text-second-color">Web</h2>
         </div>
         <div>
-          <button className="bg-second-color p-1 rounded-sm text-white font-primary-font ">
+          <button className="bg-primary-color p-1 rounded-sm text-white font-primary-font ">
             Contactarnos
           </button>
         </div>

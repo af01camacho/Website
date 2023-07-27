@@ -9,7 +9,7 @@ const SeccionBuscar = () => {
   };
 
   return (
-    <div className=" bg-primary-color py-5 w-full ">
+    <div className="  py-5 w-full bg-second-color ">
       <div className="flex lg:flex-col flex-col md:flex-col items-center w-full  ">
         <div className=" break-words text-center md:w-fit flex items-center flex-col justify-center">
           <h2 className="text-3xl font-extrabold uppercase text-white mb-2 font-primary-font">
@@ -20,7 +20,7 @@ const SeccionBuscar = () => {
             cualquiera de nuestros planes
           </p>
         </div>
-        <div className="md:w-fit w-fit flex justify-center md:justify-end items-center">
+        <div className="md:w-fit w-fit flex justify-center md:justify-end  items-center">
           <Search onSearch={handleSearch} />
         </div>
       </div>

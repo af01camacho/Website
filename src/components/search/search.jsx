@@ -30,18 +30,18 @@ const Search = ({ onSearch }) => {
   };
 
   return (
-    <div className="relative m-2 font-primary-font">
-      <div className="flex items-center  w-fit lg:w-[800px] md:w-[700px] outline-none border-none bg-white p-2 justify-araound border-4 rounded-lg overflow-hidden">
+    <div className="relative m-2 font-primary-font border border-grey-300 rounded-sm ">
+      <div className="flex items-center   w-[460px] lg:w-[800px] md:w-[600px] outline-none border-none bg-white p-2 justify-araound border-4 rounded-lg overflow-hidden">
         <input
           type="text"
           onChange={handleSearchInput}
           value={searchQuery}
           placeholder="Buscar un dominio disponible"
-          className="border-0 p-2 px-16 w-full h-[50px] placeholder:text-center rounded-md focus:outline-none"
+          className="border-0 p-2 px-5 w-full h-[50px] placeholder:px-5 rounded-md focus:outline-none"
         />
         <button
           onClick={handleSearchButtonClick}
-          className="bg-[#ff6b00] text-white px-9 py-3 rounded-lg w-1/4"
+          className="bg-primary-color text-white px-9 py-3 rounded-lg lg:w-1/4 w-[100px] md:w-1/4 "
         >
           <FontAwesomeIcon icon={faSearch} />
         </button>
