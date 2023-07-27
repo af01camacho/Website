@@ -30,7 +30,7 @@ const Search = ({ onSearch }) => {
   };
 
   return (
-    <div className="relative m-2 font-primary-font border border-grey-300 rounded-sm ">
+    <div className="relative m-2 font-primary-font  rounded-sm ">
       <div className="flex items-center   w-[460px] lg:w-[800px] md:w-[600px] outline-none border-none bg-white p-2 justify-araound border-4 rounded-lg overflow-hidden">
         <input
           type="text"
