@@ -3,7 +3,7 @@ import imghero from "../../assets/Settings (1).gif";
 export function Hero() {
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center   md:grid-cols-2 bg-primary-color ">
+      <div className="grid sm:pl-10 lg:pl-0 grid-cols-1 lg:grid-cols-2 place-items-center   md:grid-cols-2 bg-primary-color ">
         {/* Card 1  */}
         <div className="text-white flex items-center lg:order-1 md:order-1 order-2 justify-center flex-col">
           <TypeWriter />
