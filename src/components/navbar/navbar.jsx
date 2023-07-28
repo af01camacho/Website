@@ -63,13 +63,13 @@ export function NavbarMobile() {
         </div>
 
         <div className="flex uppercase text-primary-color font-primary-font font-extrabold text-2xl justify-center">
-          <h2 className="text-second-color">Master</h2>
-          <h2 className="text-white">Web</h2>
+          <h2 className="text-second-color pr-2">M a s t e r</h2>
+          <h2 className="text-white">W e b</h2>
         </div>
 
         <div>
-          <button className="bg-second-color p-1 rounded-sm text-white font-primary-font">
-            Contactarnos
+          <button className="bg-second-color px-4 py-2 rounded-full text-white text-m">
+            <FontAwesomeIcon icon={faUser} style={{ color: "white" }} />
           </button>
         </div>
       </div>

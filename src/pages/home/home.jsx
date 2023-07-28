@@ -1,3 +1,4 @@
+import Footer from "../../components/footer/foorter";
 import { Hero } from "../../components/hero/hero";
 import { NavbarMobile, NavbarDesktop } from "../../components/navbar/navbar";
 import { TopBar } from "../../components/topbar/topbar";
@@ -12,11 +13,13 @@ function Home() {
       <NavbarDesktop />
       <NavbarMobile />
       <Hero />
-      <SeccionBuscar />
+
       <div>
-        <CardsPrice />
         <CardInfoSection />
+        <SeccionBuscar />
+        <CardsPrice />
       </div>
+      <Footer />
     </div>
   );
 }

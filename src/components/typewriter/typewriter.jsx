@@ -2,13 +2,13 @@ import Typewriter from "typewriter-effect";
 
 const TypeWriter = () => {
   return (
-    <h2 className="font-bold text-xl justify-center flex md:text-2xl sm:text-3xl lg:text-3xl md:p-5">
+    <h2 className="font-extrabold text-2xl xl:text-4xl justify-center flex md:text-2xl sm:text-4xl  lg:text-3xl md:p-5">
       <Typewriter
         options={{
           strings: [
-            "HACEMOS REALIDAD TU IDEA...",
-            "TE ASESORAMOS EN COMPRAS",
-            "TU NEGOCIO SIN LIMITES...",
+            "Haz realidad tus ideas",
+            "Asesoramos tus compras",
+            "Tu negocio sin limites",
           ],
           autoStart: true,
           loop: true,
