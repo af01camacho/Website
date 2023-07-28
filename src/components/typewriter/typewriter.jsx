@@ -2,7 +2,7 @@ import Typewriter from "typewriter-effect";
 
 const TypeWriter = () => {
   return (
-    <h2 className="font-bold text-s justify-center flex md:text-4xl sm:text-3xl lg:text-3xl md:p-5">
+    <h2 className="font-bold text-s justify-center flex md:text-2xl sm:text-3xl lg:text-3xl md:p-5">
       <Typewriter
         options={{
           strings: [

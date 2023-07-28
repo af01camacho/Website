@@ -3,9 +3,9 @@ import imghero from "../../assets/Settings (1).gif";
 export function Hero() {
   return (
     <>
-      <div className=" grid-cols-2 bg-primary-color h-[500px] md:hidden sm:hidden hidden lg:grid">
+      <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center   md:grid-cols-2 bg-primary-color ">
         {/* Card 1  */}
-        <div className="text-white flex items-center justify-center flex-col">
+        <div className="text-white flex items-center order-2 justify-center flex-col">
           <TypeWriter />
           <h2>Quedate seguro en manos de nuestros expertos.!</h2>
           <div className="flex flex-col gap-2 p-2 items-center">
@@ -33,7 +33,7 @@ export function Hero() {
         </div>
 
         {/* Card 2 */}
-        <div className="w-[450px] flex items-center">
+        <div className="w-[450px] justify-center order-1 flex items-center">
           <img src={imghero} alt="" />
         </div>
       </div>

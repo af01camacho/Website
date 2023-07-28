@@ -46,9 +46,9 @@ export function NavbarDesktop() {
 export function NavbarMobile() {
   return (
     <>
-      <div className="bg-white lg:hidden flex justify-evenly h-14  items-center">
+      <div className="bg-[#0d0f51] lg:hidden flex justify-evenly h-14  items-center">
         {/* Menu */}
-        <div className="bg-[#ffffff5e] p-1 rounded-s">
+        <div className=" p-1 rounded-s">
           <FontAwesomeIcon
             icon={faBars}
             size="xl"
@@ -58,11 +58,11 @@ export function NavbarMobile() {
 
         {/* Logo */}
         <div className="flex uppercase text-primary-color font-primary-font font-extrabold text-2xl justify-center">
-          <h2>Master</h2>
-          <h2 className="text-second-color">Web</h2>
+          <h2 className="text-second-color">Master</h2>
+          <h2 className="text-white">Web</h2>
         </div>
         <div>
-          <button className="bg-primary-color p-1 rounded-sm text-white font-primary-font ">
+          <button className="bg-second-color p-1 rounded-sm text-white font-primary-font ">
             Contactarnos
           </button>
         </div>

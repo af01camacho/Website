@@ -12,10 +12,10 @@ const SeccionBuscar = () => {
     <div className="  py-5 w-full bg-primary-color ">
       <div className="flex lg:flex-col flex-col md:flex-col items-center w-full  ">
         <div className=" break-words text-center md:w-fit flex items-center flex-col justify-center">
-          <h2 className="text-3xl font-extrabold uppercase text-white mb-2 font-primary-font">
+          <h2 className="text-2xl font-extrabold uppercase text-white mb-2 font-primary-font">
             Registra tu dominio Aquí hoy
           </h2>
-          <p className="text-xl text-gray-400 mb-4 font-primary-font">
+          <p className="text-s w-fit text-center text-gray-400 mb-4 font-primary-font">
             En el registro de tu primer dominio .com o .org contratando
             cualquiera de nuestros planes
           </p>
