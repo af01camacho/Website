@@ -1,8 +1,12 @@
+/* Iconos */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faUser } from "@fortawesome/free-solid-svg-icons";
-
+/* Routes */
 import { Link } from "react-router-dom";
+/* Hooks */
 import { useState } from "react";
+/* Img */
+import Logo from '../../assets/logo.png'
 
 export function NavbarDesktop() {
   const menu = [
@@ -16,15 +20,14 @@ export function NavbarDesktop() {
     <>
       <nav className="md:hidden sm:hidden bg-[#000248f2] lg:flex hidden  items-center justify-around h-16">
         {/* Logo */}
-        <div className="flex text-xl uppercase font-extrabold font-primary-font">
-          <h2 className="text-second-color">Masters</h2>
-          <h2 className="text-white">Web</h2>
+        <div className="h-[130px] w-[400px] right-[10px]">
+          <img src={Logo} alt="Logo" />
         </div>
         {/* Menu */}
         <ul className="text-white font-primary-font uppercase font-bold  gap-5 flex">
           {menu.map((item, index) => {
             return(
-              <li key={index} className="border-spacing-y-10 text-second-color">
+              <li key={index} className="border-spacing-y-10 text-second-color text-white">
                 <Link to={item.route}>{item.link}</Link>
               </li>
             )
@@ -62,9 +65,8 @@ export function NavbarMobile() {
           <FontAwesomeIcon icon={faBars} size="xl" style={{ color: "#f2f2f2" }} />
         </div>
 
-        <div className="flex uppercase text-primary-color font-primary-font font-extrabold text-2xl justify-center">
-          <h2 className="text-second-color pr-2">M a s t e r</h2>
-          <h2 className="text-white">W e b</h2>
+        <div className="h-[130px] w-[400px]">
+          <img src={Logo} alt="Logo" />
         </div>
 
         <div>
