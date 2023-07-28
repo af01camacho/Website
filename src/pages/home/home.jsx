@@ -12,10 +12,11 @@ function Home() {
       <NavbarDesktop />
       <NavbarMobile />
       <Hero />
-      <SeccionBuscar />
+
       <div>
-        <CardsPrice />
         <CardInfoSection />
+        <SeccionBuscar />
+        <CardsPrice />
       </div>
     </div>
   );

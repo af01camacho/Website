@@ -13,11 +13,10 @@ const SeccionBuscar = () => {
       <div className="flex lg:flex-col flex-col md:flex-col items-center w-full  ">
         <div className=" break-words text-center md:w-fit flex items-center flex-col justify-center">
           <h2 className="text-2xl font-extrabold uppercase text-white mb-2 font-primary-font">
-            Registra tu dominio Aquí hoy
+            Registra tu dominio
           </h2>
           <p className="text-s w-fit text-center text-gray-400 mb-4 font-primary-font">
-            En el registro de tu primer dominio .com o .org contratando
-            cualquiera de nuestros planes
+            Tu primer dominio obten gratis soporte
           </p>
         </div>
         <div className="md:w-fit w-fit flex justify-center md:justify-end  items-center">

@@ -16,7 +16,7 @@ function CardsPrice() {
   return (
     <>
       <h2 className="text-4xl font-extrabold font-primary-font text-center py-5">
-        Planes de hosting web
+        Planes Hosting
       </h2>
       <div className="grid md:grid-cols-1 lg:grid-cols-3 grid-cols-1 place-content-center gap-5 p-5 place-items-center">
         <div className="relative h-80 md:w-3/4 lg:w-[310px] w-full rounded-md bg-white shadow-2xl">

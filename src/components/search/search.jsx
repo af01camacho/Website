@@ -31,13 +31,13 @@ const Search = ({ onSearch }) => {
 
   return (
     <div className="relative m-2 font-primary-font  rounded-sm ">
-      <div className="flex items-center   w-fit lg:w-[800px] md:w-[600px] outline-none border-none bg-white p-2 justify-araound border-4 rounded-lg overflow-hidden">
+      <div className="flex items-center border border-grey-200   w-fit lg:w-[800px] md:w-[600px] outline-none  bg-white p-2 justify-araound  rounded-lg overflow-hidden">
         <input
           type="text"
           onChange={handleSearchInput}
           value={searchQuery}
           placeholder="Buscar un dominio"
-          className="border-0 p-2 px-5 w-full md:w-full lg:w-full h-[50px]  rounded-md focus:outline-none"
+          className="p-2 px-5 w-full md:w-full lg:w-full h-[50px]  rounded-md focus:outline-none"
         />
         <button
           onClick={handleSearchButtonClick}
