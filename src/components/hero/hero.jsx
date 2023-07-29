@@ -14,7 +14,7 @@ export function HeroMobile() {
     <>
       <div className="font-primary-font px-3 dark:bg-primary-color-dm dark:text-white">
         <div>
-          <h2 className="text-4xl font-extrabold">
+          <h2 className="text-3xl font-extrabold">
             Diseñamos por ti tu proxima gran idea de trabajo
           </h2>
           <span className="font-light">
