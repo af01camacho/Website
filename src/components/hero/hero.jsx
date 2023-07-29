@@ -9,7 +9,7 @@ export function HeroTablet() {
 export function HeroMobile() {
   return (
     <>
-      <div className="font-primary-font p-2 dark:bg-primary-color-dm dark:text-white">
+      <div className="font-primary-font px-8 dark:bg-primary-color-dm dark:text-white">
         <div>
           <h2 className="text-4xl font-extrabold">
             Diseñamos por ti tu proxima gran idea de trabajo
@@ -24,14 +24,14 @@ export function HeroMobile() {
         </div>
         <div className="flex flex-col items-center text-center gap-3 py-4">
           <input
-            className="border border-gray-200 rounded-md p-2 w-5/6"
+            className="border border-gray-200 rounded-md p-2 w-full"
             placeholder="Coloca tu email"
             type="email"
             name=""
             id=""
           />
           <input
-            className="bg-btn-color text-white font-semibold rounded-md p-2 w-5/6"
+            className="bg-btn-color text-white font-semibold rounded-md p-3 w-full"
             type="submit"
             value="Enviar"
           />
