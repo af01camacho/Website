@@ -9,7 +9,7 @@ function NavbarMobile() {
   };
   return (
     <>
-      <nav className=" shadow-sm flex py-2   items-center justify-around">
+      <nav className=" shadow-sm flex py-3   items-center justify-around">
         <h2 className="font-semibold text-lg">TechMastersWeb</h2>
         <div className="flex items-center justify-center gap-4">
           <FontAwesomeIcon size="lg" icon={faMoon} />
