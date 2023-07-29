@@ -26,9 +26,9 @@ function NavbarMobile({ changeDarkMode }) {
             : "translate-y-[-4000px] absolute  "
         }
       >
-        <Link className="">Home</Link>
+        <Link to="/">Home</Link>
         <Link>About</Link>
-        <Link>Services</Link>
+        <Link to="/services">Services</Link>
         <Link>Portafolio</Link>
       </div>
     </>

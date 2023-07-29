@@ -10,9 +10,9 @@ function NavbarDesktop({ changeDarkMode }) {
     <>
       <nav className="flex justify-around shadow-md  p-3 place-items-center gap-2">
         <ul className="flex gap-4 text-md">
-          <Link>Home</Link>
+          <Link to="/">Home</Link>
           <Link>About</Link>
-          <Link>Services</Link>
+          <Link to="/services">Services</Link>
           <Link>Portafilio</Link>
         </ul>
         <div>
