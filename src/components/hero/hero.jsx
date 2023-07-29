@@ -26,7 +26,7 @@ export function HeroMobile() {
           </span>
         </div>
         <div className="flex flex-col items-center text-center gap-3 py-4">
-          <div className="flex w-96 items-center rounded-md px-3 border border-gray-200">
+          <div className="flex w-44 items-center rounded-md px-3 border border-gray-200">
             <FontAwesomeIcon style={{ color: "#6B7280" }} icon={faEnvelope} />
             <input
               className=" outline-none  p-2"
@@ -37,7 +37,7 @@ export function HeroMobile() {
             />
           </div>
           <input
-            className="bg-btn-color text-white font-semibold rounded-md p-3 w-96"
+            className="bg-btn-color text-white font-semibold rounded-md p-3 w-44"
             type="submit"
             value="Enviar"
           />
