@@ -1,3 +1,6 @@
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export function HeroDesktop() {
   return <>Desktop</>;
 }
@@ -23,15 +26,18 @@ export function HeroMobile() {
           </span>
         </div>
         <div className="flex flex-col items-center text-center gap-3 py-4">
+          <div className="flex w-96 items-center rounded-md px-3 border border-gray-200">
+            <FontAwesomeIcon style={{ color: "#6B7280" }} icon={faEnvelope} />
+            <input
+              className=" outline-none  p-2"
+              placeholder="Coloca tu email"
+              type="email"
+              name=""
+              id=""
+            />
+          </div>
           <input
-            className="border border-gray-200 rounded-md p-2 w-full"
-            placeholder="Coloca tu email"
-            type="email"
-            name=""
-            id=""
-          />
-          <input
-            className="bg-btn-color text-white font-semibold rounded-md p-3 w-full"
+            className="bg-btn-color text-white font-semibold rounded-md p-3 w-96"
             type="submit"
             value="Enviar"
           />
