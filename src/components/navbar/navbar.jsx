@@ -10,11 +10,11 @@ import Logo from '../../assets/logo.png'
 
 export function NavbarDesktop() {
   const menu = [
-    {link: "Aplicaciones", route: '/'},
-    {link: "Servicios", route: '/services'},
-    {link: "Contactanos", route: '/contacto'},
-    {link: "Portafolio", route: '/portafolio'}
-  ]
+    { link: "Aplicaciones", route: "/" },
+    { link: "Servicios", route: "/services" },
+    { link: "Contactanos", route: "/contacto" },
+    { link: "Portafolio", route: "/portafolio" },
+  ];
 
   return (
     <>
@@ -30,7 +30,7 @@ export function NavbarDesktop() {
               <li key={index} className="border-spacing-y-10 text-second-color text-white">
                 <Link to={item.route}>{item.link}</Link>
               </li>
-            )
+            );
           })}
         </ul>
         <div>
@@ -62,7 +62,11 @@ export function NavbarMobile() {
       <div className="bg-[#0d0f51] lg:hidden flex justify-evenly h-14 items-center">
         {/* Menu */}
         <div className="p-1 rounded-s cursor-pointer" onClick={showMenu}>
-          <FontAwesomeIcon icon={faBars} size="xl" style={{ color: "#f2f2f2" }} />
+          <FontAwesomeIcon
+            icon={faBars}
+            size="xl"
+            style={{ color: "#f2f2f2" }}
+          />
         </div>
 
         <div className="h-[130px] w-[400px]">
