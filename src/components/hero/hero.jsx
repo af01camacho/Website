@@ -2,7 +2,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export function HeroDesktop() {
-  return <>Desktop</>;
+  return <></>;
 }
 
 export function HeroTablet() {

@@ -6,7 +6,7 @@ function Navbar({ changeDarkMode }) {
   return (
     <div className="font-primary-font dark:bg-primary-color-dm dark:text-white">
       <div className="hidden  lg:contents xl:contents">
-        <NavbarDesktop />
+        <NavbarDesktop changeDarkMode={changeDarkMode} />
       </div>
       <div className=" contents xl:hidden sm:hidden md:hidden lg:hidden 2xl:hidden">
         <NavbarMobile changeDarkMode={changeDarkMode} />
