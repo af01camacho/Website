@@ -22,16 +22,16 @@ export function HeroMobile() {
             voluptatibus.
           </span>
         </div>
-        <div className="flex flex-col items-center text-center gap-4">
+        <div className="flex flex-col items-center text-center gap-3 py-4">
           <input
-            className="border border-gray-200 rounded-md p-2 w-3/4"
+            className="border border-gray-200 rounded-md p-2 w-5/6"
             placeholder="Coloca tu email"
             type="email"
             name=""
             id=""
           />
           <input
-            className="bg-btn-color text-white font-semibold rounded-md p-2 w-3/4"
+            className="bg-btn-color text-white font-semibold rounded-md p-2 w-5/6"
             type="submit"
             value="Enviar"
           />
