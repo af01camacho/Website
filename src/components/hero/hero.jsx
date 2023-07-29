@@ -13,7 +13,7 @@ export function HeroMobile() {
   return (
     <>
       <div className="font-primary-font px-3 dark:bg-primary-color-dm dark:text-white">
-        <div>
+        <div className="p-2">
           <h2 className="text-3xl font-extrabold">
             Diseñamos por ti tu proxima gran idea de trabajo
           </h2>
