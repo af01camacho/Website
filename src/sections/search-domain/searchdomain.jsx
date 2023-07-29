@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function SearchDomain() {
   return (
     <>
-      <div className="dark:bg-primary-color-dm dark:text-white grid grid-cols-1 px-3 place-items-center">
+      <div className="dark:bg-primary-color-dm dark:text-white gap-2 grid grid-cols-1 px-3 place-items-center">
         <div className="flex flex-col items-center justify-center">
           <h2 className="text-2xl font-bold">Busca tu dominio online</h2>
           <span className="p-2 font-light text-center">
@@ -26,21 +26,26 @@ function SearchDomain() {
             value="Buscar"
           />
         </div>
-        <div className="grid grid-cols-5 gap-2">
-          <div>
-            <h2>.com</h2>
+        <div className="grid grid-cols-5 gap-3">
+          <div className="flex flex-col items-center">
+            <h2 className="font-bold">.com</h2>
+            <h2 className="font-light text-sm">$55.000</h2>
           </div>
-          <div>
-            <h2>.net</h2>
+          <div className="flex flex-col items-center">
+            <h2 className="font-bold">.net</h2>
+            <h2 className="font-light text-sm">$55.000</h2>
           </div>
-          <div>
-            <h2>.org</h2>
+          <div className="flex flex-col items-center">
+            <h2 className="font-bold">.org</h2>
+            <h2 className="font-light text-sm">$55.000</h2>
           </div>
-          <div>
-            <h2>.online</h2>
+          <div className="flex flex-col items-center">
+            <h2 className="font-bold">.co</h2>
+            <h2 className="font-light text-sm">$55.000</h2>
           </div>
-          <div>
-            <h2>.co</h2>
+          <div className="flex flex-col items-center">
+            <h2 className="font-bold">.online</h2>
+            <h2 className="font-light text-sm">$55.000</h2>
           </div>
         </div>
       </div>
