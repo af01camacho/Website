@@ -9,7 +9,7 @@ export function HeroTablet() {
 export function HeroMobile() {
   return (
     <>
-      <div className="font-primary-font p-2">
+      <div className="font-primary-font p-2 dark:bg-primary-color-dm dark:text-white">
         <div>
           <h2 className="text-4xl font-extrabold">
             Diseñamos por ti tu proxima gran idea de trabajo
