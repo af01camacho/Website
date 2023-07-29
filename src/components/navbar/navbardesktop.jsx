@@ -38,7 +38,7 @@ function NavbarDesktop({ changeDarkMode }) {
             icon={faRightToBracket}
           />
           <input
-            className="p-2 border dark:border-gray-700 border-gray-300 rounded-md"
+            className="p-[6px] border dark:border-gray-700 border-gray-300 rounded-md"
             type="submit"
             value="Logearse"
           />

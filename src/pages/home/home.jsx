@@ -26,7 +26,7 @@ function Home() {
   };
 
   return (
-    <>
+    <div className="font-primary-font">
       <Navbar changeDarkMode={changeDarkMode} />
       {/* Design Mobile */}
       <div className="contents md:hidden lg:hidden sm:hidden xl:hidden font-primary-font">
@@ -37,7 +37,7 @@ function Home() {
       <div className="hidden lg:contents xl:contents">
         <HeroDesktop />
       </div>
-    </>
+    </div>
   );
 }
 

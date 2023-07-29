@@ -1,8 +1,41 @@
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import imghero from "../../assets/undraw_home_screen_re_640d.svg";
 export function HeroDesktop() {
-  return <></>;
+  return (
+    <>
+      <div className="grid grid-cols-2 items-center py-10 dark:bg-primary-color-dm dark:text-white">
+        <div className="flex flex-col gap-3 items-center justify-center p-5">
+          <h2 className="text-5xl font-black">
+            Diseñamos por ti tu proxima gran idea de trabajo
+          </h2>
+          <span className="font-light">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+            incidunt impedit atque voluptatem similique reiciendis ipsa officiis
+            laborum neque nostrum repellendus vel, mollitia doloremque
+            blanditiis quaerat nulla animi natus commodi!
+          </span>
+          <div className=" w-full flex justify-between dark:border-none  border  ">
+            <input
+              className=" dark:bg-gray-600 w-full outline-none px-4  "
+              placeholder="Coloca tu correo"
+              type="email"
+              name=""
+              id=""
+            />
+            <input
+              className="bg-btn-color text-white w-1/4 p-2"
+              type="submit"
+              value="Enviar"
+            />
+          </div>
+        </div>
+        <div className="flex items-center">
+          <img src={imghero} alt="" />
+        </div>
+      </div>
+    </>
+  );
 }
 
 export function HeroTablet() {
