@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function SearchDomain() {
   return (
     <>
-      <div className="grid grid-cols-1 px-3 place-items-center">
+      <div className="dark:bg-primary-color-dm dark:text-white grid grid-cols-1 px-3 place-items-center">
         <div className="flex flex-col items-center justify-center">
           <h2 className="text-2xl font-bold">Busca tu dominio online</h2>
           <span className="p-2 font-light text-center">
@@ -14,7 +14,7 @@ function SearchDomain() {
         <div className="flex w-full rounded-md  border border-gray-200 items-center pl-2 justify-center">
           <FontAwesomeIcon icon={faMagnifyingGlass} />
           <input
-            className=" w-3/4 p-2 placeholder:px-2 rounded-md"
+            className=" dark:bg-primary-color-dm w-3/4 p-2 placeholder:px-2 rounded-md"
             placeholder="Escribe tu dominio"
             type="search"
             name=""
