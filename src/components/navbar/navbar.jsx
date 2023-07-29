@@ -52,7 +52,7 @@ function Navbar() {
           <div></div>
           <ul className="flex gap-5">
             <Link>Aplicaciones</Link>
-            <Link>Services</Link>
+            <Link to="/services">Services</Link>
             <Link>About</Link>
             <Link>Planes</Link>
             <Link>Dominios</Link>
