@@ -8,6 +8,7 @@ export default {
         "primary-color-dm": "var(--primary-color-dm)",
         "btn-color": "var(--btn-color)",
         "span-color": "var(--span-color)",
+        "bg-sombra": "var(--bg-sombra)",
       },
       fontFamily: {
         "primary-font": "var(--primary-font)",

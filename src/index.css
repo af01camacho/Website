@@ -13,6 +13,7 @@
   --btn-color: #1c64f2; /* Colores Botones */
   --primary-color-dm: #1f2a37; /* Color principal Dark Mode */
   --span-color: #9ca3af; /* Color span texto */
+  --bg-sombra: #e5e7eb;
 }
 
 @tailwind base;
