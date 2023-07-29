@@ -16,7 +16,7 @@ function Navbar() {
             <FontAwesomeIcon icon={faEnvelope} />{" "}
             <span>soporte@techmastersweb.com</span>
           </div>
-          <div className="flex p-2 justify-end gap-1 ">
+          <div className="flex p-3 justify-end gap-1 ">
             <select
               className="outline-none cursor-pointer dark:bg-primary-color-dm"
               name=""
