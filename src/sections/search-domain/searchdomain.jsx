@@ -11,10 +11,10 @@ function SearchDomain() {
             Obten un 20% de descuento en tu primera compra
           </span>
         </div>
-        <div className="flex w-full rounded-md  border border-gray-200 items-center pl-2 justify-center">
+        <div className="flex w-full rounded-md border border-gray-200 dark:border-none dark:bg-gray-600 items-center pl-2 justify-center">
           <FontAwesomeIcon icon={faMagnifyingGlass} />
           <input
-            className=" dark:bg-primary-color-dm w-3/4 p-2 placeholder:px-2 rounded-md"
+            className=" dark:bg-gray-600 outline-none dark:border-none w-3/4 p-2 placeholder:px-2 rounded-md"
             placeholder="Escribe tu dominio"
             type="search"
             name=""

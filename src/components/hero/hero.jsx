@@ -26,10 +26,10 @@ export function HeroMobile() {
           </span>
         </div>
         <div className="flex flex-col items-center text-center gap-3 py-2">
-          <div className="flex w-full items-center rounded-md px-3 border border-gray-200">
+          <div className="flex w-full items-center rounded-md px-3 border-gray-200 border dark:border-none dark:bg-gray-600">
             <FontAwesomeIcon style={{ color: "#6B7280" }} icon={faEnvelope} />
             <input
-              className=" dark:bg-primary-color-dm outline-none  p-2"
+              className=" dark:bg-gray-600 outline-none  p-2"
               placeholder="Coloca tu email"
               type="email"
               name=""
