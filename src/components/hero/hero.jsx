@@ -12,7 +12,7 @@ export function HeroTablet() {
 export function HeroMobile() {
   return (
     <>
-      <div className="font-primary-font px-6 dark:bg-primary-color-dm dark:text-white">
+      <div className="font-primary-font px-3 dark:bg-primary-color-dm dark:text-white">
         <div>
           <h2 className="text-4xl font-extrabold">
             Diseñamos por ti tu proxima gran idea de trabajo
@@ -25,7 +25,7 @@ export function HeroMobile() {
             voluptatibus.
           </span>
         </div>
-        <div className="flex flex-col items-center text-center gap-3 py-4">
+        <div className="flex flex-col items-center text-center gap-3 py-2">
           <div className="flex w-full items-center rounded-md px-3 border border-gray-200">
             <FontAwesomeIcon style={{ color: "#6B7280" }} icon={faEnvelope} />
             <input
