@@ -9,7 +9,7 @@ function NavbarMobile() {
   };
   return (
     <>
-      <nav className=" flex h-full overflow-hidden p-2  items-center justify-between">
+      <nav className=" shadow-sm flex h-full overflow-hidden p-2  items-center justify-between">
         <h2 className="font-semibold text-lg">TechMastersWeb</h2>
         <div className="flex items-center justify-center gap-4">
           <FontAwesomeIcon size="lg" icon={faMoon} />
