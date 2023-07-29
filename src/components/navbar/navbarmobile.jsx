@@ -1,7 +1,12 @@
 import { faMoon, faUser, faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 function NavbarMobile() {
+  const [click, setClick] = useState(false);
+  const handleclick = () => {
+    setClick(!click);
+  };
   return (
     <>
       <nav className=" flex h-full overflow-hidden p-2  items-center justify-between">
@@ -11,13 +16,19 @@ function NavbarMobile() {
           <FontAwesomeIcon icon={faUser} />
           <hr className="bg-bg-sombra dark:bg-bg-sombra w-[1px] flex h-[20px]" />
 
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon onClick={handleclick} icon={faBars} />
         </div>
       </nav>
-      <div className="flex flex-col overflow-hidden float-right bg-btn-color w-52 h-[92.8vh] items-center  text-black ">
+      <div
+        className={
+          click
+            ? `flex flex-col p-2 gap-2 transition ease-in-out delay-150	 "`
+            : "translate-y-96 absolute  "
+        }
+      >
         <Link className="">Home</Link>
-        <Link>Services</Link>
         <Link>About</Link>
+        <Link>Services</Link>
         <Link>Portafolio</Link>
       </div>
     </>
