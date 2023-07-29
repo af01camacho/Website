@@ -62,7 +62,7 @@ function Navbar() {
           <div className="flex items-center justify-center">
             <hr className="  w-[30px] rotate-90 " />
           </div>
-          <div className="border dark:bg-[#4B5563] border-none p-2 pl-4 rounded-md">
+          <div className="border dark:bg-[#4B5563] border-gray-250 dark:border-none p-2 pl-4 rounded-md">
             <FontAwesomeIcon icon={faMagnifyingGlass} />
             <input
               className=" px-4 w-80 outline-none dark:bg-[#4B5563]"
