@@ -23,7 +23,7 @@ function NavbarMobile() {
         className={
           click
             ? `flex flex-col p-2 gap-2 transition ease-in-out delay-150	 "`
-            : "translate-y-96 absolute  "
+            : "translate-y-[-4000px] absolute  "
         }
       >
         <Link className="">Home</Link>
