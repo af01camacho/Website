@@ -29,7 +29,7 @@ export function HeroMobile() {
           <div className="flex w-full items-center rounded-md px-3 border border-gray-200">
             <FontAwesomeIcon style={{ color: "#6B7280" }} icon={faEnvelope} />
             <input
-              className=" outline-none  p-2"
+              className=" dark:bg-primary-color-dm outline-none  p-2"
               placeholder="Coloca tu email"
               type="email"
               name=""
