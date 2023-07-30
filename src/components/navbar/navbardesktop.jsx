@@ -5,7 +5,20 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { LoginDesktop } from "../login/login";
+import { useState } from "react";
+
 function NavbarDesktop({ changeDarkMode }) {
+  const [toggle, setToggle] = useState(false);
+
+  function HandleClick() {
+    if (toggle == true) {
+      setToggle(false);
+    } else {
+      setToggle(true);
+    }
+  }
+
   return (
     <>
       <nav className="flex justify-around shadow-md  p-3 place-items-center gap-2">
@@ -41,7 +54,9 @@ function NavbarDesktop({ changeDarkMode }) {
             className="p-[6px] border dark:border-gray-700 border-gray-300 rounded-md"
             type="submit"
             value="Logearse"
+            onClick={HandleClick}
           />
+
           <input
             className="bg-btn-color p-2 rounded-md text-white"
             type="submit"
@@ -49,6 +64,7 @@ function NavbarDesktop({ changeDarkMode }) {
           />
         </div>
       </nav>
+      {toggle ? <LoginDesktop /> : ""}
     </>
   );
 }
