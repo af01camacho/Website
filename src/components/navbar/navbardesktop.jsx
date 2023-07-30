@@ -64,7 +64,15 @@ function NavbarDesktop({ changeDarkMode }) {
           />
         </div>
       </nav>
-      {toggle ? <LoginDesktop /> : ""}
+      <div
+        className={
+          toggle
+            ? "transition "
+            : "transition ease-in-out   -translate-y-[500px]"
+        }
+      >
+        <LoginDesktop />
+      </div>
     </>
   );
 }
