@@ -9,7 +9,7 @@ function NavbarMobile({ changeDarkMode }) {
   };
   return (
     <>
-      <nav className=" shadow-sm flex py-3   items-center justify-around">
+      <nav className=" shadow-md flex py-3   items-center justify-around">
         <h2 className="font-semibold text-lg">TechMastersWeb</h2>
         <div className="flex items-center justify-center gap-4">
           <FontAwesomeIcon onClick={changeDarkMode} size="lg" icon={faMoon} />
