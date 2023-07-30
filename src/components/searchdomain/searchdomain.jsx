@@ -31,14 +31,14 @@ export function SearchDomainDesktop() {
       <div className=" grid   grid-cols-3  place-items-center">
         {info.map((infos, index) => (
           <div className="" key={index}>
-            <div className="bg-white  w-[352px] dark:bg-gray-600 dark:border-none p-5 flex flex-col justify-between border rounded-md">
+            <div className="bg-white shadow-2xl w-[352px] dark:bg-gray-600 dark:border-none p-5 flex flex-col justify-between border rounded-md">
               <h2 className="bg-btn-color rounded-lg p-3 text-3xl font-bold uppercase text-white">
                 {infos.title}
               </h2>
               <h3 className="text-xl font-light">{infos.desc}</h3>
               <h2 className="text-2xl pt-10">Planes desde</h2>
               <h4 className="text-4xl font-light pb-10">{infos.price}</h4>
-              <span className="font-light text-sm p-2">{infos.span}</span>
+              <span className="font-semibold dark:text-span-color text-sm p-2">{infos.span}</span>
               <button className="bg-btn-color p-2 text-xl text-white">
                 Contratar
               </button>
