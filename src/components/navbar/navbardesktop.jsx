@@ -10,23 +10,21 @@ import { useState } from "react";
 
 function NavbarDesktop({ changeDarkMode }) {
   const [toggle, setToggle] = useState(false);
+  const [money, setMoney] = useState('')
+  console.log(money)
 
   function HandleClick() {
-    if (toggle == true) {
-      setToggle(false);
-    } else {
-      setToggle(true);
-    }
+    setToggle(!toggle);
   }
 
   return (
     <>
-      <nav className="flex justify-around shadow-md  p-3 place-items-center gap-2">
+      <nav className="flex justify-around shadow-md p-3 place-items-center gap-2">
         <ul className="flex gap-4 text-md">
           <Link to="/">Home</Link>
           <Link>About</Link>
           <Link to="/services">Services</Link>
-          <Link>Portafilio</Link>
+          <Link>Portafolio</Link>
         </ul>
         <div>
           <h2 className="font-bold text-3xl">TechMastersWeb</h2>
@@ -50,6 +48,7 @@ function NavbarDesktop({ changeDarkMode }) {
             size="s"
             icon={faRightToBracket}
           />
+
           <input
             className="p-[6px] border dark:border-gray-700 border-gray-300 rounded-md"
             type="submit"
@@ -57,18 +56,18 @@ function NavbarDesktop({ changeDarkMode }) {
             onClick={HandleClick}
           />
 
-          <input
-            className="bg-btn-color p-2 rounded-md text-white"
-            type="submit"
-            value="Registrarse"
-          />
+          <div className="bg-btn-color rounded-md px-1 ">
+            <select onChange={(e) =>  setMoney(e.target.value)}  className="text-white bg-transparent outline-none p-2 " name="" id="">
+              <option className="text-black" selected
+                value="USD">USD</option>
+              <option  className="text-black dark:text-black" value="COL">COL</option>
+            </select>
+          </div>
         </div>
       </nav>
       <div
         className={
-          toggle
-            ? "transition "
-            : "transition ease-in-out   -translate-y-[500px]"
+          toggle ? "transition" : "transition ease-in-out -translate-y-[500px]"
         }
       >
         <LoginDesktop />

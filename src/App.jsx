@@ -1,40 +1,41 @@
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/home/home";
-import Services from "./pages/services/services";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect } from "react";
+import React, { useEffect, useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/home/home';
+import Services from './pages/services/services';
+
 function App() {
+  // State to manage dark mode
+  const [darkMode, setDarkMode] = useState(() => {
+    // Check local storage and media query to determine dark mode preference
+    return (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    );
+  });
+
+  // Effect to apply dark mode class and update localStorage when the component mounts or darkMode changes
   useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, []);
+    document.documentElement.classList.toggle('dark', darkMode);
+    localStorage.theme = darkMode ? 'dark' : 'light'; // Update localStorage.theme
+  }, [darkMode]);
 
-  const toggleDarkMode = document.documentElement.classList.contains("dark");
-
-  const changeDarkMode = () => {
-    toggleDarkMode
-      ? (localStorage.theme = "dark")
-      : (localStorage.theme = "light");
-    document.documentElement.classList.toggle("dark");
+  // Function to toggle dark mode
+  const toggleDarkMode = () => {
+    setDarkMode((prevDarkMode) => !prevDarkMode);
   };
 
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Home changeDarkMode={changeDarkMode} />} />
-        <Route
-          path="/services"
-          element={<Services changeDarkMode={changeDarkMode} />}
-        />
-      </Routes>
-    </>
+    <Routes>
+      <Route
+        path="/"
+        element={<Home changeDarkMode={toggleDarkMode} darkMode={darkMode} />}
+      />
+      <Route
+        path="/services"
+        element={<Services changeDarkMode={toggleDarkMode} darkMode={darkMode} />}
+      />
+    </Routes>
   );
 }
 

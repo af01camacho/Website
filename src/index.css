@@ -14,6 +14,7 @@
   --primary-color-dm: #1f2a37; /* Color principal Dark Mode */
   --span-color: #9ca3af; /* Color span texto */
   --bg-sombra: #e5e7eb;
+  --bg-primary: #F3F4F6;
 }
 
 @tailwind base;
