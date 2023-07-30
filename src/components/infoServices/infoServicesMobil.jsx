@@ -1,7 +1,7 @@
 import imghero from "../../assets/undraw_home_screen_re_640d.svg";
 const InfoServicesMobil = () => {
   return (
-    <div className="dark:bg-primary-color-dm   px-4 mt-2 dark:bg-primary-color-md bg-white flex-col justify-start items-center gap-2.5 inline-flex">
+    <div className="dark:bg-primary-color-dm   dark:bg-primary-color-md  flex-col justify-start items-center gap-2.5 ">
       <div className="self-stretch px-4 flex-col justify-start items-center gap-8 flex">
         <div className="self-stretch  flex-col justify-start items-start gap-4 flex">
           <h1 className="self-stretch dark:text-white text-gray-900 text-center text-3xl font-extrabold leading-[37.50px]">
