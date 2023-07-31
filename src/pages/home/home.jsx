@@ -7,17 +7,21 @@ import { SearchDomainDesktop } from "../../components/searchdomain/searchdomain"
 function Home({ changeDarkMode }) {
   return (
     <div className="font-primary-font">
+      
       <Navbar changeDarkMode={changeDarkMode} />
+      <HeroDesktop />
       {/* Design Mobile */}
       <div className="contents md:hidden lg:hidden sm:hidden xl:hidden font-primary-font">
-        <HeroMobile />
+        {/* <HeroMobile /> */}
+        
       
       </div>
       {/* Design Desktop */}
       <div className="hidden lg:contents xl:contents">
-        <HeroDesktop />
-        <SearchDomainDesktop/>
+        
+
       </div>
+      <SearchDomainDesktop/>
     </div>
   );
 }
