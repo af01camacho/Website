@@ -5,7 +5,7 @@ export function HeroDesktop() {
   return (
     <>
       <div className="grid lg:grid-cols-2 pt-6 md:grid-cols-2 place-items-center md:place-items-center pb-20 dark:bg-primary-color-dm dark:text-white">
-        <div className="px-1 pl-10  grid gap-2 order-1 md:order-1">
+        <div className="px-4  grid gap-2 order-1 md:order-1">
           <h2 className="text-4xl lg:text-5xl md:text-3xl font-black">
             Diseñamos por ti tu proxima gran idea de trabajo
           </h2>
@@ -15,9 +15,9 @@ export function HeroDesktop() {
             laborum neque nostrum repellendus vel, mollitia doloremque
             blanditiis quaerat nulla animi natus commodi!
           </span>
-          <div className=" dark:bg-gray-600  rounded-md flex justify-between dark:border-none border">
+          <div className=" dark:bg-gray-600 lg:w-3/4  rounded-md flex justify-between dark:border-none border">
             <input
-              className=" dark:bg-transparent w-[200px]  p-2  outline-none px-4  "
+              className=" dark:bg-transparent w-full  p-2  outline-none px-4  "
               placeholder="Coloca tu correo"
               type="email"
               name=""
