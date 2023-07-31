@@ -4,6 +4,7 @@ import InfoServices from "../../components/infoServices/infoServices";
 import InfoServicesMobil from "../../components/infoServices/infoServicesMobil";
 import TopServicesDesktop from "../../components/topServices/topServicesDesktop";
 import InfoServicesTablet from "../../components/infoServices/infoServicesTablet";
+import FooterDesktop from "../../components/footer/footerDesktop";
 
 function Services({ changeDarkMode }) {
   return (
@@ -21,6 +22,11 @@ function Services({ changeDarkMode }) {
       {/* ===== Top Services =====*/}
       <div className="">
         <TopServicesDesktop />
+      </div>
+
+      {/* ===== Footer =====*/}
+      <div>
+        <FooterDesktop />
       </div>
     </>
   );
