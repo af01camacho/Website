@@ -7,21 +7,21 @@ const InfoServicesMobil = () => {
           <h1 className="self-stretch dark:text-white text-gray-900 text-center text-3xl font-extrabold leading-[37.50px]">
             Conoce nuestros servicios
           </h1>
-          <p className="self-stretch text-gray-500 text-base font-normal leading-normal">
+          <p className="self-stretch text-gray-500 dark:text-white text-base font-normal leading-normal">
             En nuestro sitio web, ofrecemos servicios de hosting líderes en el
             mercado, garantizando un rendimiento excepcional y confiabilidad
             para tus sitios web. Además, nuestro equipo de diseño crea sitios
             personalizados que reflejan tu marca de manera atractiva y
             funcional.
           </p>
-          <p className="self-stretch text-gray-500 text-base font-normal leading-normal">
+          <p className="self-stretch text-gray-500 dark:text-white text-base font-normal leading-normal">
             Descubre nuestros servicios de hosting de alta calidad y diseño web
             personalizado. Potenciamos tu presencia en línea con soluciones
             confiables y atractivas para que alcances el éxito en la web.
           </p>
         </div>
-        <div className=" justify-start items-start  inline-flex">
-          <img className="p-2.5" src={imghero} />
+        <div className=" justify-start items-start inline-flex">
+          <img className="p-2.5 w-80" src={imghero} />
         </div>
       </div>
     </div>

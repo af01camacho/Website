@@ -38,10 +38,10 @@ export function SearchDomainDesktop() {
               <h2 className="bg-btn-color rounded-lg p-3 text-3xl font-bold uppercase text-white">
                 {infos.title}
               </h2>
-              <h3 className="text-xl font-light">{infos.desc}</h3>
+              <h3 className="text-xl mt-4 font-light">{infos.desc}</h3>
               <h2 className="text-2xl pt-10">Planes desde</h2>
-              <h4 className="text-4xl font-light pb-10">{infos.price}</h4>
-              <span className="font-semibold dark:text-span-color text-sm p-2">
+              <h4 className="text-4xl font-light pb-6">{infos.price}</h4>
+              <span className="font-semibold dark:text-white text-sm mb-6">
                 {infos.span}
               </span>
               <button className="bg-btn-color p-2 text-xl text-white">
@@ -72,7 +72,6 @@ export function SearchDomainDesktop() {
             </div>
             <h2 className="text-2xl font-semibold">Hazlo visite al mundo</h2>
           </div>
-          
         </div>
       </div>
     </div>
