@@ -5,8 +5,8 @@ export function HeroDesktop() {
   return (
     <>
       <div className="grid lg:grid-cols-2 pt-6 md:grid-cols-2 place-items-center md:place-items-center pb-20 dark:bg-primary-color-dm dark:text-white">
-        <div className="px-4  grid gap-2 order-1 md:order-1">
-          <h2 className="text-4xl lg:text-5xl md:text-3xl font-black">
+        <div className="px-4   grid gap-2 order-1 md:order-1">
+          <h2 className="text-4xl  lg:text-5xl md:text-3xl font-black">
             Diseñamos por ti tu proxima gran idea de trabajo
           </h2>
           <span className="font-light">
