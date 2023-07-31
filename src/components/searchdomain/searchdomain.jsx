@@ -37,7 +37,7 @@ export function SearchDomainDesktop() {
         {info.map((infos, index) => (
           <div className="" key={index}>
             <div className="flex flex-col items-center  dark:bg-gray-600 dark:border-none p-2 border rounded-md">
-              <h2 className="bg-btn-color w-full rounded-lg p-3 text-3xl font-semibold uppercase text-white">
+              <h2 className="bg-btn-color w-full rounded-lg p-3 text-2xl font-semibold uppercase text-white">
                 {infos.title}
               </h2>
               <h3 className="text-xl mt-4 font-light">{infos.desc}</h3>
