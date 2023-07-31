@@ -15,16 +15,16 @@ export function HeroDesktop() {
             laborum neque nostrum repellendus vel, mollitia doloremque
             blanditiis quaerat nulla animi natus commodi!
           </span>
-          <div className=" w-full flex justify-between dark:border-none  border  ">
+          <div className=" rounded-md  overflow-hidden w-full flex justify-between dark:border-none  border  ">
             <input
-              className=" dark:bg-gray-600 w-full outline-none px-4  "
+              className=" dark:bg-gray-600 p-2  outline-none px-4  "
               placeholder="Coloca tu correo"
               type="email"
               name=""
               id=""
             />
             <input
-              className="bg-btn-color text-white w-1/4 p-2"
+              className="bg-btn-color text-white w-1/4 "
               type="submit"
               value="Enviar"
             />

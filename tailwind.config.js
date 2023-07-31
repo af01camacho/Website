@@ -9,10 +9,12 @@ export default {
         "btn-color": "var(--btn-color)",
         "span-color": "var(--span-color)",
         "bg-sombra": "var(--bg-sombra)",
+        "bg-primary": "var(--bg-primary)",
       },
       fontFamily: {
         "primary-font": "var(--primary-font)",
         "second-font": "var(--second-font)",
+  
       },
     },
   },
