@@ -19,17 +19,17 @@ function NavbarDesktop({ changeDarkMode }) {
 
   return (
     <>
-      <nav className="flex justify-around shadow-md p-3 place-items-center gap-2">
-        <ul className="flex gap-4 text-md">
+      <nav className="flex justify-around shadow-md p-4 place-items-center gap-2">
+        <ul className="flex gap-4 text-sm md:hidden lg:contents">
           <Link to="/">Home</Link>
           <Link>About</Link>
           <Link to="/services">Services</Link>
           <Link>Portafolio</Link>
         </ul>
         <div>
-          <h2 className="font-bold text-3xl">TechMastersWeb</h2>
+          <h2 className="font-bold text-xl">TechMastersWeb</h2>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1">
           <FontAwesomeIcon
             className="cursor-pointer dark:border dark:border-gray-600 text-black border-gray-300 border dark:text-white py-3 text-center w-10 rounded-full"
             size="s"
