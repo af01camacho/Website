@@ -4,8 +4,8 @@ import imghero from "../../assets/undraw_home_screen_re_640d.svg";
 export function HeroDesktop() {
   return (
     <>
-      <div className="grid grid-cols-2 items-center py-10 dark:bg-primary-color-dm dark:text-white">
-        <div className="flex flex-col gap-3 items-center justify-center p-5">
+      <div className="grid grid-cols-2  dark:bg-primary-color-dm dark:text-white">
+        <div className="flex flex-col gap-3  text-center items-center justify-center p-1">
           <h2 className="text-5xl font-black">
             Diseñamos por ti tu proxima gran idea de trabajo
           </h2>
@@ -15,9 +15,9 @@ export function HeroDesktop() {
             laborum neque nostrum repellendus vel, mollitia doloremque
             blanditiis quaerat nulla animi natus commodi!
           </span>
-          <div className=" rounded-md  overflow-hidden w-full flex justify-between dark:border-none  border  ">
+          <div className=" dark:bg-gray-600 w-5/6 rounded-md  overflow-hidden  flex justify-between dark:border-none  border  ">
             <input
-              className=" dark:bg-gray-600 p-2  outline-none px-4  "
+              className=" dark:bg-transparent  p-2  outline-none px-4  "
               placeholder="Coloca tu correo"
               type="email"
               name=""
