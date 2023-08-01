@@ -15,23 +15,29 @@ export function HeroDesktop() {
             laborum neque nostrum repellendus vel, mollitia doloremque
             blanditiis quaerat nulla animi natus commodi!
           </span>
-          <div className=" dark:bg-gray-600 lg:w-3/4  rounded-md flex justify-between dark:border-none border">
-            <input
-              className=" dark:bg-transparent w-full  p-2  outline-none px-4  "
-              placeholder="Coloca tu correo"
-              type="email"
-              name=""
-              id=""
-            />
-            <input
-              className="bg-btn-color text-white w-1/4 "
-              type="submit"
-              value="Enviar"
-            />
+          <div className=" dark:bg-gray-600 lg:w-3/4  rounded-md  dark:border-none border">
+            <div className="flex  justify-around">
+              <input
+                className=" dark:bg-transparent w-full  p-2  outline-none   "
+                placeholder="Coloca tu correo"
+                type="email"
+                name=""
+                id=""
+              />
+              <input
+                className="bg-btn-color text-white w-1/4 rounded-md"
+                type="submit"
+                value="Enviar"
+              />
+            </div>
           </div>
         </div>
         <div className=" md:order-1 lg:order-2">
-          <img className="pb-[50px] md:pt-10 lg:pt:10 md:h-[440px]" src={imghero} alt="" />
+          <img
+            className="pb-[50px] md:pt-10 lg:pt:10 md:h-[440px]"
+            src={imghero}
+            alt=""
+          />
         </div>
       </div>
     </>

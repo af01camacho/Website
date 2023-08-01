@@ -1,6 +1,6 @@
 export function LoginDesktop() {
   return (
-    <div className="flex flex-col items-center justify-center h-[92%] w-[100%] absolute filter backdrop-blur-sm">
+    <div className="flex flex-col items-center justify-center h-screen z-99 w-[100%] absolute filter backdrop-blur-sm">
       <div className="bg-white dark:bg-gray-900 dark:text-white border border-gray-500 flex-col w-[600px] h-[400px]  text-black rounded-xl p-2 flex items-center gap-7">
         <h2 className="text-2xl font-semibold">Login</h2>
         <div className="flex flex-col gap-2">

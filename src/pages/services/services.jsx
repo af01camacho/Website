@@ -10,7 +10,7 @@ import FooterTablet from "../../components/footer/footerTablet";
 
 function Services({ changeDarkMode }) {
   return (
-    <>
+    <div className="font-second-font">
       <Navbar changeDarkMode={changeDarkMode} />
       <div className="hidden lg:contents xl:contents">
         <InfoServices />
@@ -41,7 +41,7 @@ function Services({ changeDarkMode }) {
       <div className="hidden sm:contents md:contents lg:hidden xl:hidden">
         <FooterTablet />
       </div>
-    </>
+    </div>
   );
 }
 

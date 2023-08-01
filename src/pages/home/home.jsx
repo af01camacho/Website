@@ -6,32 +6,22 @@ import FooterDesktop from "../../components/footer/footerDesktop";
 import FooterMobile from "../../components/footer/footerMobile";
 import FooterTablet from "../../components/footer/footerTablet";
 
-
 function Home({ changeDarkMode }) {
   return (
     <div className="font-primary-font">
       <Navbar changeDarkMode={changeDarkMode} />
       <HeroDesktop />
-      {/* Design Mobile */}
-      <div className="contents md:hidden lg:hidden sm:hidden xl:hidden font-primary-font">
-        {/* <HeroMobile /> */}
-      </div>
+      <SearchDomainDesktop />
       {/* Design Desktop */}
-      <div className="hidden lg:contents xl:contents">
-      </div>
-
-      <div>
-        <SearchDomainDesktop/>
-      </div>
-
       <div className="hidden lg:contents xl:contents">
         <FooterDesktop />
       </div>
 
-      <div className="xl:hidden sm:hidden lg:hidden md:hidden">
+      {/* Design Mobile */}
+      <div className="contents md:hidden lg:hidden sm:hidden xl:hidden font-primary-font">
         <FooterMobile />
       </div>
-
+      {/* Design Tablet */}
       <div className="hidden sm:contents md:contents lg:hidden xl:hidden">
         <FooterTablet />
       </div>
